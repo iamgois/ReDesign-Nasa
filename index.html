@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <title>NASA</title>
 </head>
-<body>
+<body onload="animate()">
     <nav>
-        <ul class="nav-menu">
+        <i id="mobile-menu" class="fa-solid fa-bars"></i>
+        <ul id="nav-menu" class="nav-menu">
+            <i id="close-mobile-menu" class="fa-regular fa-circle-xmark"></i>
             <li class="nav-item"><a href="/"><button class="bn-32 bn32">Missions</button></a></li>
             <li class="nav-item"><a href="/"><button class="bn-32 bn32">Galleries</button></a></li>
             <li class="nav-item"><a href="/"><button class="bn-32 bn32">NasaTV</button></a></li>
@@ -22,12 +24,12 @@
         </div>
     </nav>
 
-    <header>
-        <p>NASA//</p>
-        <h1>The National Aeronautics and Space Administration is America’s
+    <header id="header">
+        <p id="header-p">NASA//</p>
+        <h1 id="header-h1">The National Aeronautics and Space Administration is America’s
             civil space program and the global leader in space exploration. </h1>
             <div class="bg-photo">
-                <img src="img/bg.png">
+                <img id="bg-photo" src="img/bg.png">
             </div>
     </header>
 
@@ -37,5 +39,7 @@
         <p>LIVE 9 a.m. EDT (13:00 UTC): Russian Spacewalk at the International Space Station</p>
         <button>Watch</button>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
